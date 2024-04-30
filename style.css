@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #cfcbcb;
+  min-height: 100vh;
+}
+a {
+  text-decoration: underline;
+  color: black;
+}
+.container {
+  width: 1440px;
+  height: 1024px;
+  margin: 50px auto;
+}
+.main-frame {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+.main-frame .image {
+  flex-basis: 50%;
+  position: relative;
+}
+.main-frame .image .overlay {
+  background-color: rgba(17, 17, 17, 0.25);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.main-frame .image img {
+  width: 100%;
+  height: 100%;
+}
+.main-frame .image .text {
+  position: absolute;
+  width: 482px;
+  height: 260px;
+  top: 182px;
+  left: 72px;
+  color: #ffffff;
+}
+.main-frame .image .text h1 {
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+.main-frame .image .text p {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+.main-frame .log-process {
+  flex-basis: 50%;
+}
+.main-frame .log-process .sign-up {
+  position: absolute;
+  right: 48px;
+  padding: 2px;
+  top: 48px;
+}
+.main-frame .log-process .sign-up span {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.main-frame .log-process .sign-up a {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: black;
+}
+.main-frame .log-process .signing-in {
+  width: 568px;
+  height: 703px;
+  position: relative;
+  top: 179px;
+  left: 76px;
+}
+.log-process .signing-in h1 {
+  font-family: Poppins;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: left;
+  color: #333333;
+  margin-bottom: 48px;
+}
+.log-process .social-media-login {
+  width: 568px;
+  height: 144px;
+}
+.log-process .social-media-login .google-log {
+  margin-bottom: 16px;
+}
+.log-process .social-media-login .google-log,
+.log-process .social-media-login .twitter-log {
+  width: 100%;
+  height: 64px;
+  border-radius: 40px;
+  border: 1px solid #333333;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Avenir;
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.log-process .signing-in #or {
+  text-align: center;
+  display: block;
+  margin: 48px 0;
+  position: relative;
+  font-family: Avenir;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.59px;
+  color: #666666;
+}
+.log-process .signing-in #or::before,
+.log-process .signing-in #or::after {
+  content: "";
+  position: absolute;
+  width: 247.5px;
+  height: 2px;
+  background: #66666640;
+
+  top: 11.5px;
+}
+.log-process .signing-in #or::before {
+  left: 0;
+}
+.log-process .signing-in #or::after {
+  right: 0;
+}
+.social-media-login .google-log .google-icon,
+.social-media-login .twitter-log .twitter-icon {
+  line-height: 15px;
+  margin-right: 10px;
+}
+
+.log-process .form {
+  width: 568px;
+  height: 342px;
+  position: relative;
+}
+.log-process .form .email-field,
+.log-process .form .pass-field {
+  width: 100%;
+}
+.form .email-field label,
+.log-process .form .pass-field label {
+  display: block;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+  margin: 18px 0 7px;
+  line-height: 24px;
+  color: #666666;
+  width: calc(100% - 100px);
+}
+.form .email-field input,
+.log-process .form .pass-field input {
+  width: 568px;
+  height: 56px;
+  border-radius: 12px;
+  border: 1px solid #66666659;
+  padding: 15px;
+  outline: none;
+}
+
+.log-process .form .pass-field .pass-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pass-field .pass-label .hide-icon {
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: right;
+  color: #666666cc;
+  cursor: pointer;
+}
+.form .pass-field .forget-pass {
+  display: block;
+  text-align: right;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.form .btn {
+  color: white;
+  width: 304px;
+  height: 64px;
+  padding: 16.5px 0px 17.5px 0px;
+  border-radius: 32px;
+  background-color: #997825;
+  font-weight: 400;
+  font-family: Poppins;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin: 0 0 10px;
+}
+.form .sign-up-second {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
